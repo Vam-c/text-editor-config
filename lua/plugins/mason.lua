@@ -20,27 +20,10 @@ return {
             -- ["rust_analyzer"] = function ()
             --    require("rust-tools").setup {}
             -- end
-            ["pylsp"] = function()
-                require("lspconfig").pylsp.setup {
-                    settings = {
-                        pylsp = {
-                            plugins = {
-                                -- formatter options
-                                black = { enabled = false },
-                                autopep8 = { enabled = false },
-                                yapf = { enabled = false },
-                                -- linter options
-                                pylint = { enabled = false, executable = "pylint" },
-                                pyflakes = { enabled = false },
-                                pycodestyle = { enabled = false },
-                            }
-                        }
-                    }
-                }
-            end
         }
 
         vim.diagnostic.config({float = { source = true }})
-        vim.keymap.set({ 'n', 'i' }, '<leader>d', "<cmd>lua vim.diagnostic.open_float()<CR>");
+        vim.keymap.set('n', '<leader>a', "<cmd>lua vim.lsp.buf.code_action()<CR>")
+        vim.keymap.set('n', '<leader>d', "<cmd>lua vim.diagnostic.open_float()<CR>")
     end,
 }
