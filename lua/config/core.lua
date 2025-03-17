@@ -13,7 +13,7 @@ vim.o.relativenumber = true
 vim.o.mouse = "a"
 
 -- Sync clipboard between OS and Neovim.
-vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -62,7 +62,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 -- Don't wrap lines
-vim.opt.wrap = true
+vim.opt.wrap = false
 -- Wrap lines at convenient points
 vim.opt.linebreak = true
 -- Show line breaks
