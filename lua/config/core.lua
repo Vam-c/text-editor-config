@@ -13,7 +13,7 @@ vim.o.relativenumber = true
 vim.o.mouse = "a"
 
 -- Sync clipboard between OS and Neovim.
-vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+vim.opt.clipboard:append { 'unnamedplus' }
 
 -- Enable break indent
 vim.o.breakindent = true
