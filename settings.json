@@ -1,0 +1,102 @@
+{
+    "telemetry.telemetryLevel": "off",
+    // Minimalist UI.
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": false,
+    "editor.guides.indentation": false,
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "hidden",
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.renderLineHighlight": "none",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "git.showCommitInput": false,
+    "git.showActionButton": {
+        "commit": false,
+        "publish": false,
+        "sync": false
+    },
+    "workbench.editor.revealIfOpen": true,
+    // Fonts and themes.
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.fontFamily": "\"Iosevka\"",
+    "workbench.colorTheme": "Gruvbox Black",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.renderIndentGuides": "always",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.productIconTheme": "material-product-icons",
+    // Preferences.
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 1,
+    "keyboard.dispatch": "keyCode",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "python.analysis.typeCheckingMode": "standard",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.createEnvironment.trigger": "off",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    // VIM settings.
+    "vim.leader": " ",
+    "vim.gdefault": true,
+    "vim.visualstar": true,
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-w>": false,
+        // To avoid undo with vscode's undo history.
+        "<C-z>": true,
+        // navigating editors.
+        "<C-k>": false,
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-l>": false,
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "editor.action.startFindReplaceAction"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ],
+}
