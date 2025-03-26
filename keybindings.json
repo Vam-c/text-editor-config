@@ -33,6 +33,7 @@
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
     },
+
     // To navigate, create and toggle terminal.
     {
         "key": "alt+t",
@@ -88,16 +89,8 @@
         "when": "accessibilityHelpIsShown"
     },
     {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusLeftGroup"
-    },
-    {
         "key": "ctrl+k ctrl+left",
         "command": "-workbench.action.focusLeftGroup"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusRightGroup"
     },
     {
         "key": "ctrl+k ctrl+right",
@@ -114,16 +107,8 @@
         "when": "inKeybindings && inKeybindingsSearch"
     },
     {
-        "key": "ctrl+k",
-        "command": "workbench.action.focusAboveGroup"
-    },
-    {
         "key": "ctrl+k ctrl+up",
         "command": "-workbench.action.focusAboveGroup"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.focusBelowGroup"
     },
     {
         "key": "ctrl+k ctrl+down",
@@ -138,16 +123,8 @@
         "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
-        "key": "ctrl+w j",
-        "command": "workbench.action.moveActiveEditorGroupDown"
-    },
-    {
         "key": "ctrl+k down",
         "command": "-workbench.action.moveActiveEditorGroupDown"
-    },
-    {
-        "key": "ctrl+w k",
-        "command": "workbench.action.moveActiveEditorGroupUp"
     },
     {
         "key": "ctrl+k up",
@@ -216,11 +193,6 @@
         "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
     {
-        "key": "ctrl+b",
-        "command": "-extension.vim_ctrl+b",
-        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
-    },
-    {
         "key": "ctrl+m",
         "command": "workbench.action.toggleSidebarVisibility"
     },
@@ -243,5 +215,34 @@
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-extension.vim_ctrl+w",
+        "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+w j",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "ctrl+w k",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
     }
 ]

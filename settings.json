@@ -97,6 +97,14 @@
             "after": [
                 "$"
             ]
+        },
+        {
+            "before": ["<leader>", "d", "n"],
+            "commands": ["workbench.action.compareEditor.nextChange"],
+        },
+        {
+            "before": ["<leader>", "d", "p"],
+            "commands": ["workbench.action.compareEditor.previousChange"],
         }
     ],
 }
