@@ -13,13 +13,16 @@
     "editor.renderLineHighlight": "none",
     "workbench.editor.empty.hint": "hidden",
     "workbench.layoutControl.enabled": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showTabs": "single",
+    "workbench.editor.enablePreview": false,
     "git.showCommitInput": false,
+    "git.blame.editorDecoration.enabled": false,
     "git.showActionButton": {
         "commit": false,
         "publish": false,
         "sync": false
     },
-    "workbench.editor.revealIfOpen": true,
     // Fonts and themes.
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
@@ -112,5 +115,29 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "update.mode": "manual",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "githubPullRequests.pullBranch": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.nextEditSuggestions.fixes": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "github.copilot.chat.reviewSelection.enabled": false,
+    "github.copilot.chat.startDebugging.enabled": false,
+    "github.copilot.chat.edits.newNotebook.enabled": false,
+    "github.copilot.chat.newWorkspaceCreation.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     },
 }
